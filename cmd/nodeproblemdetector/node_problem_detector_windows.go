@@ -14,16 +14,13 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-package filelog
+package main
 
 import (
-	"io"
-
-	"github.com/hpcloud/tail"
+	"github.com/golang/glog"
 )
 
-// getLogReader returns log reader for filelog log. Note that getLogReader doesn't look back
-// to the rolled out logs.
-func getLogReader(path string) (io.ReadCloser, error) {
-	return tail.OpenFile(path)
+func main() {
+	glog.Info("Running windows main")
+	npdMain()
 }

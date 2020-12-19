@@ -14,6 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
+// Package main is the entrypoint for node problem detector.
 package main
 
 import (
@@ -34,7 +35,7 @@ import (
 	"k8s.io/node-problem-detector/pkg/version"
 )
 
-func main() {
+func npdMain() {
 	npdo := options.NewNodeProblemDetectorOptions()
 	npdo.AddFlags(pflag.CommandLine)
 
